@@ -1,0 +1,40 @@
+return {
+
+  -- main mini init
+  "echasnovski/mini.nvim",
+  version = false,
+  config = function()
+    local icons = require("mini.icons")
+    icons.setup()
+    icons.tweak_lsp_kind()
+
+    -- mini.basics
+    require("mini.basics").setup({
+      options = { basic = false, extra_ui = false },
+      mappings = {
+        basic = true,
+        windows = true,
+        move_with_alt = true,
+      },
+      autocommands = {
+        basic = true,
+        relnum_in_visual_mode = true,
+      },
+      silent = true,
+    })
+
+    -- mini.notify
+    local notify = require ("mini.notify")
+    notify.setup()
+    vim.notify = notify.make_notify()
+
+    -- text editing basics (thank the lord)
+    require("mini.surround").setup()
+    require("mini.pairs").setup()
+    require("mini.comment").setup()
+
+    -- statusline and tabline? might go back to lualine and tabbuf we'll see, good enough for now tho
+    require("mini.statusline").setup()
+    require("mini.tabline").setup()
+  end
+}

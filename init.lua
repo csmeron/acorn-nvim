@@ -1,8 +1,8 @@
 --[[
 -- Init for Bootstrap and Module/Spec Import
 -- Uses lazy.nvim for plugin management
+-- Uses mini.nvim as primary plugin/modules
 --]]
-
 
 -- Import core modules
 local core = {
@@ -10,12 +10,8 @@ local core = {
   "core.keymaps",
 }
 
-local plugs = {
-  { import = "plugins.ui" } ,
-}
-
 -- Send plugins to the Lazy bootstrap
-require("core.lazy").setup(plugs)
+require("core.lazy").setup({import = "plugins"})
 -- Requires all core modules
 for _, mod in ipairs(core) do
   require(mod)
