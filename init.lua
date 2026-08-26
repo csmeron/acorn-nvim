@@ -1,6 +1,7 @@
 --[[
 -- Init for Bootstrap and Module/Spec Import
 -- Uses lazy.nvim for plugin management
+-- Uses mini.nvim as primary plugin/modules
 --]]
 
 -- Import core modules
