@@ -3,7 +3,9 @@
   "lazy.nvim": { "branch": "main", "commit": "306a05526ada86a7b30af95c5cc81ffba93fef97" },
   "mini.nvim": { "branch": "main", "commit": "0caecdd7408bc0a77697a83b931c742fcc5b0349" },
   "moonfly": { "branch": "master", "commit": "261664f92ed51cf0c077555b2d4b2530307eac17" },
+  "netrw.nvim": { "branch": "master", "commit": "3f643df59951d9adc4cf348cefe435fcdb5a3671" },
   "nvim-treesitter": { "branch": "main", "commit": "8b98b4470eb326f1c7b50dae79f8c963568e5720" },
   "onedark.nvim": { "branch": "master", "commit": "df4792accde9db0043121f32628bcf8e645d9aea" },
-  "oxocarbon.nvim": { "branch": "main", "commit": "7cc379b96fcbb4e75c5152906e0fccf81ce46590" }
+  "oxocarbon.nvim": { "branch": "main", "commit": "7cc379b96fcbb4e75c5152906e0fccf81ce46590" },
+  "snacks.nvim": { "branch": "main", "commit": "882c996cf28183f4d63640de0b4c02ec886d01f2" }
 }

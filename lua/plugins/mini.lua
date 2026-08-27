@@ -10,7 +10,7 @@ return {
 
     -- mini.basics
     require("mini.basics").setup({
-      options = { basic = false, extra_ui = false },
+      options = { basic = false, extra_ui = true },
       mappings = {
         basic = true,
         windows = true,
@@ -32,6 +32,10 @@ return {
     require("mini.surround").setup()
     require("mini.pairs").setup()
     require("mini.comment").setup()
+
+    -- basic git functionality
+    require("mini.git").setup()
+    require("mini.diff").setup()
 
     -- statusline and tabline? might go back to lualine and tabbuf we'll see, good enough for now tho
     require("mini.statusline").setup()

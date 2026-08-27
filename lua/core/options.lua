@@ -25,7 +25,7 @@ o.breakindent = true
 o.breakindentopt = "list:-1"
 
 -- UI-related Options
-o.number = false -- enables line numbers
+o.number = true -- enables line numbers
 o.conceallevel = 2
 o.signcolumn = "yes:1"
 o.list = true
@@ -36,7 +36,6 @@ o.pummaxwidth = 100
 o.ruler = false -- dont show cursor coordinates
 o.shortmess = "CFOSWaco" -- disables some builtin completion msgs (from minimax)
 o.cursorlineopt = 'screenline,number' -- show cursorline per screenline
-o.numberwidth = 4
 o.splitbelow = true
 o.splitright = true
 o.splitkeep = "screen"
