@@ -7,6 +7,7 @@ return {
     local icons = require("mini.icons")
     icons.setup()
     icons.tweak_lsp_kind()
+    
 
     -- mini.basics
     require("mini.basics").setup({
@@ -23,10 +24,11 @@ return {
       silent = true,
     })
 
-    -- mini.notify
+    -- mini.notify and starter dash
     local notify = require ("mini.notify")
     notify.setup()
     vim.notify = notify.make_notify()
+    require("mini.starter").setup()
 
     -- text editing basics (thank the lord)
     require("mini.surround").setup()

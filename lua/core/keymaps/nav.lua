@@ -19,6 +19,11 @@ map("n", "<C-l>", "<C-w>l", { desc = "Switch window right" })
 map("n", "<C-j>", "<C-w>j", { desc = "Switch window down" })
 map("n", "<C-k>", "<C-w>k", { desc = "Switch window up" })
 
+-- Buffer/Tab navigation
+map("n", "<tab>", "<cmd>bnext<CR>", { desc = "Move to next buffer" })
+map("n", "<S-tab>", "<cmd>bprevious<CR>", { desc = "Move to previous buffer" })
+map("n", "<leader>x", "<cmd>bdelete!<CR>", { desc = "Close current buffer" })
+
 -- Resizing via arrows
 -- (Not really nav related but just throwing it in with window nav)
 map("n", "<C-Up>", ":resize -2<CR>", opts)
