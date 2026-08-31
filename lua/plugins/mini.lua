@@ -7,6 +7,7 @@ return {
     local icons = require("mini.icons")
     icons.setup()
     icons.tweak_lsp_kind()
+    icons.mock_nvim_web_devicons()
     
 
     -- mini.basics
@@ -28,7 +29,6 @@ return {
     local notify = require ("mini.notify")
     notify.setup()
     vim.notify = notify.make_notify()
-    require("mini.starter").setup()
 
     -- text editing basics (thank the lord)
     require("mini.surround").setup()
@@ -39,8 +39,8 @@ return {
     require("mini.git").setup()
     require("mini.diff").setup()
 
-    -- statusline and tabline? might go back to lualine and tabbuf we'll see, good enough for now tho
-    require("mini.statusline").setup()
+    -- tab/bufline and statusline (statusline may be commented out in favor of lualine)
     require("mini.tabline").setup()
+    -- require("mini.statusline").setup()
   end
 }

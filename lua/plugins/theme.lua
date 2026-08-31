@@ -4,6 +4,9 @@
 
 local theme_list = {
   "oxocarbon",
+  "rose-pine",
+  "rose-pine-moon",
+  "rose-pine-dawn",
   "onedark",
   "catppuccin",
   "moonfly",
@@ -14,6 +17,13 @@ return {
   {
     "nyoom-engineering/oxocarbon.nvim",
     build = false,
+    priority = 1000
+  },
+
+  -- Rose Pine + Variations
+  {
+    "rose-pine/neovim",
+    name = "rose-pine",
     priority = 1000
   },
 

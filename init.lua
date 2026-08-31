@@ -8,6 +8,7 @@
 local core = {
   "core.options",
   "core.keymaps",
+  "config.lualine.basic",
 }
 
 -- Send plugins to the Lazy bootstrap
@@ -18,4 +19,4 @@ for _, mod in ipairs(core) do
 end
 
 -- colorscheme (temporary until mangement plugin is added)
-vim.cmd.colorscheme "oxocarbon"
+vim.cmd.colorscheme "rose-pine-moon"
